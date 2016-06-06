@@ -5,7 +5,11 @@ Code for infoShare workshop 19 May 2016
 * Deployed it to App Engine
 * http://infoshare-api.appspot.com/comments
 
+Reading comments:
+
+```
 GET /comments?url=https://...
+
 [
   {
     "body": "This is my comment",
@@ -20,10 +24,15 @@ GET /comments?url=https://...
     "author": "John"
   }
 ]
+```
 
+To add a comment:
+
+```
 POST /comments
 {
   "url": "https://...",
   "body": "This is my comment",
   "author": "John"
 }
+```
